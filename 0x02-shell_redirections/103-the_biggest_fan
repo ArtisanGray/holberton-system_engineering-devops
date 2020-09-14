@@ -1,0 +1,3 @@
+#!/bin/bash
+cat | cut -f 1 | sort | uniq -c | sort -r -n | head -11 | cut -c 9-#!/bin/bash
+cat | cut -f 1 | sort | uniq -c | sort -r -n | head -11 | cut -c 9-
