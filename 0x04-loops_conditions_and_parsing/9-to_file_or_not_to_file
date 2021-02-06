@@ -12,7 +12,7 @@ then
 	fi
 	if [ -f $FILENAME ]
 	then
-		echo "holbertonschool file is a regular file"
+		echo "holbertonschool is a regular file"
 	fi
 else
 	echo "holbertonschool file does not exist"
