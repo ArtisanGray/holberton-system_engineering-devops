@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this program prints 8, 4, or "Holberton School"
+i=0
+while [ $i -le 9 ]
+do
+	if [ $i -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+	i=$(( i + 1 ))
+done
