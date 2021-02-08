@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this program prints something indefinitely and spits in the user's face when they try to stop it.
+trap "echo I am invincible!!!" SIGTERM
+
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

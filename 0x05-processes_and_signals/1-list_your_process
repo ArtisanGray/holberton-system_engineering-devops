@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this program displays process information, started by user id
+ps -auxf

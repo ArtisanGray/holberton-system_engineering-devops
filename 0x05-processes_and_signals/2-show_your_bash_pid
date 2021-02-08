@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# this program displays filtered process information.
+# shellcheck disable=SC2009
+ps -auxf > ./test.txt
+grep 'bash' ./test.txt
+rm ./test.txt
