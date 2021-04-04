@@ -1,0 +1,5 @@
+Host 35.231.71.213
+  2     HostName 1697-web-01
+  3     User ubuntu
+  4     Identityfile ~/.ssh/holberton
+  5     BatchMode yes
