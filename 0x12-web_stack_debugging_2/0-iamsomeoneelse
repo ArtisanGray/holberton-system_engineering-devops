@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#switches users based on arguments
+sudo -u "$1" whoami
