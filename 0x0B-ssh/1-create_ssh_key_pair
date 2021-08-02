@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# uses keygen to create private and public key pair.
-ssh-keygen -f holberton -t rsa -b 4096 -N betty
