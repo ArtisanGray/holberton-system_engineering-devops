@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this script uses ssh-keygen to create a private and public key pair.
+ssh-keygen -N betty -b 4096 -f holberton
