@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# this script installs the Nginx web server service on an Ubuntu 16.04 machine
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo bash -c 'echo "Holberton School rocks!" > /var/www/html/index.nginx-debian.html'
+sudo sed -i '0,/try_files \$uri \$uri\/ =404;/ !b;//a\add_header X-Served-By '$HOSTNAME';' /etc/nginx/sites-available/default
+sudo service nginx restart
