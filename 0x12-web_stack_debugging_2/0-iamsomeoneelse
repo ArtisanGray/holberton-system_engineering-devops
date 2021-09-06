@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this script runs the whoami command under another user.
+sudo -H -u "$1" bash -c 'whoami'
