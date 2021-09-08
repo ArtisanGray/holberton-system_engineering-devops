@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# dumps archive of mysql databsae
+mysqldump --all-databases --single-transaction --quick --lock-tables=false > backup.sql -uroot -p"$1"
+tar -czvf $(date +"%d-%m-%Y").tar.gz backup.sql
