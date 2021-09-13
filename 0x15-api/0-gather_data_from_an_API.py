@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module uses a GET request to pull JSON formatted data from an API."""
-import sys
 import requests
+import sys
 
 
 if __name__ == "__main__":
