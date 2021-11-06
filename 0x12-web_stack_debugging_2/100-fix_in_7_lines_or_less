@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # fixes security issue on nginx config.
 pkill apache2
-chown -R nginx:nginx /etc/nginx/ /usr/share/nginx/ /usr/sbin/nginx/
-chmod 0700 /etc/nginx/nginx.conf
+chmod 0777 /etc/nginx/nginx.conf
 sed -i '1s/^/user nginx;\n/' /etc/nginx/nginx.conf
 sed -i 's,'"80"','"8080"',' /etc/nginx/sites-enabled/default
 sudo -u nginx bash -c 'service nginx restart'
